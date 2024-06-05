@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <title>Zapisy</title>
+    <script>
+        function przekierujDoZamowien() {
+            window.location.href = "http://localhost:3000/Zam%C3%B3wienia/zam%C3%B3wienia.php";
+        }
+    </script>
+
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    background-image: url(mount-everest-1920x1080-11019.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+.header{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.logo{
+    max-width: 250px;
+}
+ul{
+    display: flex;
+    padding: 10px;
+}
+li{
+    padding: 2ch;
+    list-style-type: none;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+}
+a{
+    text-decoration: none;
+    font-size: 2.3ch;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+a:hover{
+    color: white;;
+    text-shadow: 4px 4px 30px black;
+}
+.buttons{
+    display:flex;
+    padding: 10px;
+    gap: 8px;
+    
+}
+.Zadzwon{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    padding: 20px;
+    width: auto;
+    border-radius: 30px;
+    background-color: white;
+}
+.Zadzwon:hover{
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.345);
+    padding: 18px;
+}
+.Napisz{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    padding: 20px;
+    width: auto;
+    border-radius: 30px;
+    background-color: white;
+}
+.Napisz:hover{
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.345);
+    padding: 18px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 7ch;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:400ch;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.469);
+    border-radius: 5px;
+}
+.Motto_1{
+    font-size: 8ch;
+    color: rgb(236, 178, 103);
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    
+}
+.Motto_2{
+    font-size: 8ch;
+    color: rgb(194, 114, 3);
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    left:20%;
+}
+
+.writings{
+    display: flex;
+    justify-content: end;
+    margin-left: 10%;
+    padding: 10px;
+
+}
+.wybor{
+ 
+    padding:50px;
+    padding-top: 30px;;
+}
+.photo_1{
+    width: 400px;
+    padding:50px;
+    transition: all 0.5s ease-out;
+}
+
+
+.photo_1:hover{
+    width: 410px;
+}
+.photo_2{
+    width: 400px;
+    padding:50px;
+    margin-left: -3%;
+    transition: all 0.5s ease-out;
+}
+
+
+.photo_2:hover{
+    width: 410px;
+
+}
+.photo_3{
+    width: 400px;
+    padding:50px;
+    margin-left: -9%;
+    transition: all 0.5s ease-out;
+}
+
+.photo_3:hover{
+    width: 410px;
+}
+.photo_4{
+    width: 400px;
+    padding:50px;
+    margin-left: -10%;
+    transition: all 0.5s ease-out;
+}
+.photo_4:hover{
+    width: 410px;
+}
+.block-text_1{
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-size: 30px;
+    transition: all 0.5s ease-out;
+}
+.block-text_1:hover{
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-size: 32px;
+    
+}
+.block_1{
+    display: flex;
+    justify-content: center;
+    width: 1920px;
+    gap: 100px;
+}
+span{
+    
+    font-size: 10vh;
+    color:transparent;
+    -webkit-text-stroke: 3px rgb(255, 255, 255);
+}
+
+.block-text_2{
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-size: 30px;
+    transition: all 0.5s ease-out;
+}
+.block-text_2:hover{
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-size: 32px;
+}
+.block_2{
+    display: flex;
+    justify-content: center;
+    width: 1920px;
+    gap: 100px;
+}
+
+
+.block-text_3{
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-size: 30px;
+    transition: all 0.5s ease-out;
+}
+.block-text_3:hover{
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-size: 32px;
+}
+.block_3{
+    display: flex;
+    justify-content: center;
+    width: 1920px;
+    gap: 100px;
+}
+
+
+.block-text_4{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    color:white;
+    font-size: 30px;
+    transition: all 0.5s ease-out;
+}
+.block-text_4:hover{
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-size: 32px;
+}
+.block_4{
+    display: flex;
+    justify-content: center;
+    width: 1920px;
+    gap: 100px;
+}
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes rotateScale {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(1.1) rotate(10deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0px 0px 20px rgba(0, 123, 255, 0.7);
+    }
+    50% {
+        box-shadow: 0px 0px 40px rgba(0, 123, 255, 1);
+    }
+    100% {
+        box-shadow: 0px 0px 20px rgba(0, 123, 255, 0.7);
+    }
+}
+.Zapisz-sie {
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007BFF;
+            padding: 15px 30px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .Zapisz-sie:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .Zapisz-sie:active {
+            background-color: #004080;
+        }
+
+
+
+
+@media only screen and (max-width: 1000px){
+    ul{
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.345);
+        text-align: center;
+        left: 0%;
+        top: 20vh;
+    }
+    footer{
+        position: absolute;
+        top: 28vh;
+
+    }
+    .box{
+        height: 1400px;
+        height: auto;
+        margin-top: 20vh;
+    }
+    a{
+        font-size: 20px
+    }
+    a:hover{
+        color: white
+    }
+    .logo{
+        max-width: 200px
+    }
+    .block_1{
+        flex-direction: column;
+        position: relative;
+        left: 0%;
+        gap:10px
+    }
+    .block-text_1{
+        position: relative;
+        margin-left: 00px;
+        max-width: 370px;
+        font-size: 20px;
+        transition: all 100ms ease-in;
+    }
+    .block-text_1:hover{
+        font-size: 22px;
+    }
+    .photo_1{
+        margin-left: -20px;
+        width: 300px
+    }
+    .photo_1:hover{
+        margin-left: -20px;
+        width: 310px
+    }
+    .wybor{
+        gap:20px
+    }
+    .Zapisz-sie {
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007BFF;
+            padding: 15px 30px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .Zapisz-sie:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .Zapisz-sie:active {
+            background-color: #004080;
+        }
+
+}
+.Zapisz-sie-bordder {
+    width: 500px;
+    height: auto;
+    background: linear-gradient(135deg, #007BFF, #00A6FF);
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin: 20px auto;
+}
+
+.Zapisz-sie-bordder:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+}
+
+.Zapisz-sie-bordder-p {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.Zapisz-sie {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #FF5733;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.Zapisz-sie:hover {
+    background-color: #C70039;
+    transform: scale(1.05);
+}
+
+.Zapisz-sie:active {
+    background-color: #900C3F;
+}
+.Zapisz-sie-img{
+    width: 200px;
+}
+hr.styled-hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, rgba(0, 123, 255, 0.1), rgba(0, 123, 255, 0.8), rgba(0, 123, 255, 0.1));
+    margin: 20px 0;
+    position: relative;
+}
+hr.styled-hr::before {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100px;
+    background: #007BFF;
+    margin: -2px auto 0 auto;
+    border-radius: 2px;
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+</style>
+
+
+</head>
+<body>
+<header class="header">
+        <div class="logo">
+            <img class="logo"" src="logo_2.png">
+        </div>
+        <div class="headlines">
+            <ul>
+                <li><a href="file:///C:/Users/asfus/Desktop/Project%20II/Storna%20g%C5%82%C3%B3wna/StronaG%C5%82%C3%B3wna.html">Strona Główna</a></li>
+                <li><a href="file:///C:/Users/asus/Desktop/Project%20II/Aktualno%C5%9Bci/Aktualno%C5%9Bci.html">Aktualności</a></li>
+                <li><a href="file:///C:/Users/asus/Desktop/Project%20II/Zapisy/index.html">Zapisy</a></li>
+                <li><a href="file:///C:/Users/asus/Desktop/Project%20II/Kontakt/Kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="buttons">
+            
+            <p class="Zadzwon"><a href="">Zadzwoń do nas</a></p>
+            <p class="Napisz"><a href="http://localhost:3000/Napisz%20do%20nad/Napisz.php">Napisz do nas</a></p>
+        </div>
+    </header>
+    <footer class="footer">
+        <div class="box">
+            <div class="wybor">
+                <div class="block_1">
+                    <div class="Zapisz-sie-bordder">
+                        <img src="logo_2.png" class="Zapisz-sie-img">
+                        <p class="Zapisz-sie-bordder-p">Dołącz do niezapomnianej podróży!</p>
+                        <a class="Zapisz-sie" href="http://localhost:3000/Zam%C3%B3wienia/zam%C3%B3wienia.php" onclick="przekierujDoZamowien()">Zapisz się</a>
+                    </div>
+                </div>
+                <hr class="styled-hr">
+                <div class="block_1">
+                    <img class="photo_1" href="file:///D:/Projekt/Storna%20g%C5%82%C3%B3wna/StronaG%C5%82%C3%B3wna.html"
+                     src="Photo_1.png">
+                     <div class="block-text_1">
+                        <p><span>Mont Everest!</span><br>
+                            Odkryj wyjątkową przygodę na Mont Everest! 
+                                Wspięcie się na szczyt tego majestatycznego
+                                giganta<br> to nie tylko wyzwanie fizyczne, ale 
+                                także duchowe doświadczenie, które pozostawi 
+                                niezapomniane<br> wspomnienia na całe życie. Dołącz
+                                do nas już teraz! </p>
+                     </div>
+                </div>
+                <hr class="styled-hr">
+                <div class="block_1">
+                    <img class="photo_1" href="file:///D:/Projekt/Storna%20g%C5%82%C3%B3wna/StronaG%C5%82%C3%B3wna.html"
+                    src="Photo_2.png">
+                    <div class="block-text_1">
+                        <p><span>Manaslu!</span><br>
+                            Odkryj magiczne piękno Manaslu! To niezwykłe miejsce 
+                            oferuje niesamowite widoki,<br> niezapomniane szlaki trekkingowe 
+                            i autentyczną kulturę. Przeżyj przygodę swojego życia na<br> jednej
+                             z najpiękniejszych gór świata!</p>
+
+                     </div>
+                </div>
+                <hr class="styled-hr">
+                <div class="block_1">
+                    <img class="photo_1" href="file:///D:/Projekt/Storna%20g%C5%82%C3%B3wna/StronaG%C5%82%C3%B3wna.html"
+                    src="Photo_3.png">
+                    <div class="block-text_1">
+                        <p><span>K2!</span><br>
+                            Odkryj szczytowe doznania na K2! To nie tylko drugi 
+                            co do wysokości szczyt<br> na świecie, ale także symbol niezwykłej
+                             wytrwałości i odwagi. Przekraczaj granice i<br> zdobądź swoje Everest.</p>
+                     </div>
+                </div>
+                <hr class="styled-hr">
+                <div class="block_1">
+                    <img class="photo_1" href="file:///D:/Projekt/Storna%20g%C5%82%C3%B3wna/StronaG%C5%82%C3%B3wna.html"
+                    src="Photo_4.png">
+                    <div class="block-text_1">
+                        <p><span>Dhaulagiri!</span><br>
+                            Odkryj dziką i piękną Dhaulagiri! To nie tylko siódmy 
+                            co do wysokości<br> szczyt na świecie, ale także niezapomniane 
+                            wyzwanie dla odważnych podróżników.<br> Dołącz do naszej wyprawy już teraz!</p>
+                            
+                     </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </footer>
+   
+</body>
+</html>
