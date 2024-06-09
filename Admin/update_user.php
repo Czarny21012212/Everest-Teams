@@ -4,15 +4,12 @@ $username = "root";
 $password = "";
 $db_name = "test";
 
-// Tworzenie połączenia
 $conn = mysqli_connect($servername, $username, $password, $db_name);
 
-// Sprawdzenie połączenia
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-// Przygotowanie zapytania
 $sql = "SELECT * FROM (
     SELECT 
         a.id_Adres AS a_id_Adres, 
@@ -69,17 +66,14 @@ $sql = "SELECT * FROM (
 WHERE rnum <= 12
 ORDER BY a_id_Adres;";
 
-// Wykonanie zapytania
 $result = mysqli_query($conn, $sql);
 
 if (!$result) {
     die("Query failed: " . mysqli_error($conn));
 }
 
-// Pobranie wyników
 $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-// Zamknięcie połączenia
 mysqli_close($conn);
 ?>
 !
